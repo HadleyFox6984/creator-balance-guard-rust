@@ -1,0 +1,16 @@
+[package]
+name = "creator-balance-guard"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "creator-balance-guard"
+path = "src/main.rs"
+
+[lib]
+name = "creator_balance_guard"
+path = "src/lib.rs"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "json", "rustls-tls"] }
+serde_json = "1"
